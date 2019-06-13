@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="col-3 cl" style="background:green; height: 100px; width: 100px;ba"></div>
+	<script type="text/javascript">
+		let d= document.querySelector(".cl")
+		let point=0
+		d.onclick=function(){
+			
+			if ( point  == 0  ) {//условие
+				d.style.background="red"
+				point=1;
+		}else if(point==1){
+			d.style.background="yellow"
+			point=2
+		}
+		else{
+			d.style.background="green";
+			point=0
+		}
+		}
+		
+	</script>
+</body>
+</html>
